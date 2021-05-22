@@ -3,13 +3,13 @@ import setuptools
 
 setup(
     name='multistop',     # 包名字
-    version='1.0',   # 包版本
+    version='1.2',   # 包版本
     description='文本分析停用词表，支持中英德法等15种语言。',   # 简单描述
     author='大邓',  # 作者
     author_email='thunderhit@qq.com',  # 邮箱
     url='https://github.com/thunderhit/cnstopwords',      # 包的主页
     packages=setuptools.find_packages(),
-    package_data = {'':['dict.json']},  #所有目录下的json词典文件
+    package_data = {'':['stopwords.pkl']},  #所有目录下的pkl词典文件
     install_requires=['jieba', 'numpy'],
     python_requires='>=3.5',
     license="MIT",
